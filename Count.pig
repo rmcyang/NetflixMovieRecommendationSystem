@@ -1,0 +1,10 @@
+data_training = LOAD 'TrainingRatings.txt' USING PigStorage(',') AS (movie_id:int, user_id:int, rating:double);
+data_testing = LOAD 'TestingRatings.txt' USING PigStorage(',') AS (movie_id:int, user_id:int, rating:double);
+grouped_movie_training = GROUP data_training BY movie_id;
+grouped_movie_testing = GROUP data_testing BY movie_id;
+grouped_user_training = GROUP data_training BY user_id;
+grouped_user_testing = GROUP data_testing BY user_id;
+STORE grouped_movie_testing INTO 'movie_testing';
+STORE grouped_user_testing INTO 'user_testing';
+STORE grouped_movie_training INTO 'movie_training';
+STORE grouped_user_training INTO 'user_training';
