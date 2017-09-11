@@ -31,9 +31,7 @@ step of implementations.
 a. Get Similarity Matrix for Each Movie-Movie Pair. Two MapReduce jobs was implemented to complete this progress.
 b. One MapReduce job to generete top-k list for each movie.
 
-3. Predicttion(predict.pig) - to predict the ratings of movie-user pair:
+3. Predicttion(predict.pig) - to predict the ratings of movie-user pair:<br />
 (a) Theinput is TopN list of similarities of each movie, MovieAvg for querying average ratings for
-each movie and formatted training set for getting movie-user ratings. The prediction emits tuples as ([movie, user], rating). The predict
-ratings will fill in all the blanks of movie-user pairs.
-(b) Evaluation - Use two error measurement for evaluation, the Mean Absolute Error and the Root Mean
-Squared Error.
+each movie and formatted training set for getting movie-user ratings. The prediction emits tuples as ([movie, user], rating). The predict ratings will fill in all the blanks of movie-user pairs.<br />
+(b) Evaluation - Use two error measurement for evaluation, the Mean Absolute Error and the Root MeanSquared Error.
