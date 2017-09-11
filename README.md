@@ -27,11 +27,11 @@ in later MapReduce Jobs.
 This step is to generate a symmetric similarity. This symmetric similarity matrix will be loaded into the distributed cache for the next
 step of implementations.
 
-3. Generate a list of the most top k similar movies for each movie.
-a. Get Similarity Matrix for Each Movie-Movie Pair. Two MapReduce jobs was implemented to complete this progress.
+3. Generate a list of the most top k similar movies for each movie.<br />
+a. Get Similarity Matrix for Each Movie-Movie Pair. Two MapReduce jobs was implemented to complete this progress.<br />
 b. One MapReduce job to generete top-k list for each movie.
 
-3. Predicttion(predict.pig) - to predict the ratings of movie-user pair:<br />
-(a) Theinput is TopN list of similarities of each movie, MovieAvg for querying average ratings for
+4. Predicttion(predict.pig) - to predict the ratings of movie-user pair:<br />
+a. Theinput is TopN list of similarities of each movie, MovieAvg for querying average ratings for
 each movie and formatted training set for getting movie-user ratings. The prediction emits tuples as ([movie, user], rating). The predict ratings will fill in all the blanks of movie-user pairs.<br />
-(b) Evaluation - Use two error measurement for evaluation, the Mean Absolute Error and the Root MeanSquared Error.
+b. Evaluation - Use two error measurement for evaluation, the Mean Absolute Error and the Root MeanSquared Error.
