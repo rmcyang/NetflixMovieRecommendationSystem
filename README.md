@@ -4,13 +4,14 @@ This movie recommendation system based on item-item collaborative filtering algo
 was implemented in Hadoop MapReduce and PIG. The data provided by Netflix contains 3.25 million
 training ratings and around 100000 testing ratings.
 
-The following data was obtained by PIG(Count.pig):__
-Distinct movies test set 1701__
-Distinct users in test set 27555__
-Distinct movies in training set 1821__
-Distinct users in training set 28978__
-Number of paris in training set 3255352__
-Number of pairs in test set 100478__
+The following data was obtained by PIG(Count.pig):
+
+Distinct movies test set 1701
+Distinct users in test set 27555
+Distinct movies in training set 1821
+Distinct users in training set 28978
+Number of paris in training set 3255352
+Number of pairs in test set 100478
 
 Steps:
 
