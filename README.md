@@ -6,11 +6,11 @@ training ratings and around 100000 testing ratings.
 
 The following data was obtained by PIG(Count.pig):
 
-Distinct movies test set 1701
-Distinct users in test set 27555
-Distinct movies in training set 1821
-Distinct users in training set 28978
-Number of paris in training set 3255352
+Distinct movies test set 1701<br />
+Distinct users in test set 27555<br />
+Distinct movies in training set 1821<br />
+Distinct users in training set 28978<br />
+Number of paris in training set 3255352<br />
 Number of pairs in test set 100478
 
 Steps:
